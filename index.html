@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>strona główna</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<link rel="stylesheet" href="jquery.dataTables.min.css">
+<script type="text/javascript" src="jquery-3.5.1.js"></script>
+<script type="text/javascript" src="jquery.dataTables.min.js"></script>
+<script>
+      $(document).ready(function () {
+          $("#includeHtml").load("sfpw.html", function() {
+              $('#example').DataTable({        
+                  stateSave: true,
+                  responsive: true,
+                  processing : true,
+              });
+          });
+      });
+</script>
+
+</head>
+<body>
+
+<div id="includeHtml"></div>
+
+</body>
+</html>
